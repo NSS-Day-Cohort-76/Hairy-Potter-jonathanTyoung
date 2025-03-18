@@ -1,4 +1,4 @@
-import { makePottery } from './potteryWheel.js';
+import { makePottery } from './PotteryWheel.js';
 
 
 export const firePottery = (pottery, temperature) => {

@@ -1,4 +1,4 @@
-import { makePottery } from './potteryWheel.js';
+import { makePottery } from './PotteryWheel.js';
 
 const bowl = makePottery ("bowl", 2, 3);
 console.log(bowl);
