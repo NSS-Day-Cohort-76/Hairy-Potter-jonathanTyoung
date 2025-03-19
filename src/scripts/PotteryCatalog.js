@@ -7,6 +7,9 @@ export const toSellOrNotToSell = (pottery, weight) => {
 } 
 
 
+}
+
+
 
 // export const getFish = () => {
 //     return structuredClone(database.fish);
