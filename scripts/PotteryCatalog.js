@@ -1,4 +1,6 @@
-const catalog = []
+
+
+const potteryCatalog = []
 export const toSellOrNotToSell = (pottery, weight) => {
     if (weight >= 6) {
         pottery.price = 40;
@@ -11,6 +13,6 @@ export const toSellOrNotToSell = (pottery, weight) => {
 
 
 
-// export const getFish = () => {
-//     return structuredClone(database.fish);
-// }
+// // export const getFish = () => {
+// //     return structuredClone(database.fish);
+// // }

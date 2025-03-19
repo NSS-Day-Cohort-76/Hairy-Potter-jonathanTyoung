@@ -1,6 +1,7 @@
-import { makePottery } from './PotteryWheel.js';
-import { firePottery } from './Kiln.js';
-
+import { PotteryList } from "./src/scripts/PotteryList.js"
+import { makePottery } from "./src/scripts/PotteryWheel.js"
+import { firePottery } from "./Kiln.js"
+import { toSellOrNotToSell } from "./PotteryCatalog.js"
 
 
 // Make the pieces in the PotteryWheel
