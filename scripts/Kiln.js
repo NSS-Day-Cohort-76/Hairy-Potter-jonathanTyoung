@@ -1,6 +1,3 @@
-import { makePottery } from './PotteryWheel.js';
-
-
 export const firePottery = (pottery, temperature) => {
     pottery.fired = true;
     if (temperature > 2200) {

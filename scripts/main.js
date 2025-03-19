@@ -1,5 +1,9 @@
 import { makePottery } from './PotteryWheel.js';
+import { firePottery } from './Kiln.js';
 
+
+
+// Make the pieces in the PotteryWheel
 const bowl = makePottery ("bowl", 2, 3);
 console.log(bowl);
 
@@ -14,3 +18,8 @@ console.log(fork);
 
 const vase = makePottery ("vase", 10, 12);
 console.log(vase);
+
+// Fire each piece of the pottery
+
+const firedBowl = firePottery(bowl, 1000)
+console.log(firedBowl)
