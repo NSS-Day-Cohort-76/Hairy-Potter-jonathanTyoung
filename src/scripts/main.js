@@ -1,34 +1,34 @@
-import { makePottery } from "./src/scripts/PotteryWheel.js"
 import { firePottery } from "./Kiln.js"
 import { toSellOrNotToSell } from "./PotteryCatalog.js"
+import { PotteryList } from "./PotteryList.js";
+import { makePottery } from "./PotteryWheel.js";
 
 
-// Make the pieces in the PotteryWheel
-const bowl = makePottery ("bowl", 2, 3);
+// make the pottery 
+const bowl = makePottery ("BOWL", 2, 3);
 console.log(bowl);
-const cup = makePottery ("cup", 4, 5);
+const cup = makePottery ("MUG", 4, 5);
 console.log(cup);
-const house = makePottery ("house", 2, 5);
+const house = makePottery ("HOUSE", 2, 5);
 console.log(house);
-const fork= makePottery ("fork", .5, 6);
+const fork= makePottery ("FORK", .5, 6);
 console.log(fork);
-const vase = makePottery ("vase", 10, 12);
+const vase = makePottery ("VASE", 10, 12);
 console.log(vase);
 
-// Fire each piece of the pottery
-
+// fire the pottery 
 const firedBowl = firePottery(bowl, 2199)
 console.log(firedBowl)
-const firedCup = firePottery(cup, 2300)
+const firedCup = firePottery(cup, 1000)
 console.log(firedCup)
 const firedHouse = firePottery(house, 2500)
 console.log(firedHouse)
-const firedFork = firePottery(fork, 1200)
+const firedFork = firePottery(fork, 3000)
 console.log(firedFork)
-const firedVase = firePottery(vase, 3000)
+const firedVase = firePottery(vase, 1000)
 console.log(firedVase)
 
-
+//price the pottery
 const priceBowl = toSellOrNotToSell(bowl)
 console.log(priceBowl)
 const priceCup = toSellOrNotToSell(cup)
@@ -41,3 +41,7 @@ const priceVase = toSellOrNotToSell(vase)
 console.log(priceVase)
 
 
+
+// invoke and renderHTML
+const potteryHTML = PotteryList();
+document.getElementById("PotteryList").innerHTML += `${potteryHTML}`
