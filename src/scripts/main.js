@@ -1,4 +1,3 @@
-import { PotteryList } from "./src/scripts/PotteryList.js"
 import { makePottery } from "./src/scripts/PotteryWheel.js"
 import { firePottery } from "./Kiln.js"
 import { toSellOrNotToSell } from "./PotteryCatalog.js"
@@ -7,16 +6,12 @@ import { toSellOrNotToSell } from "./PotteryCatalog.js"
 // Make the pieces in the PotteryWheel
 const bowl = makePottery ("bowl", 2, 3);
 console.log(bowl);
-
 const cup = makePottery ("cup", 4, 5);
 console.log(cup);
-
 const house = makePottery ("house", 2, 5);
 console.log(house);
-
 const fork= makePottery ("fork", .5, 6);
 console.log(fork);
-
 const vase = makePottery ("vase", 10, 12);
 console.log(vase);
 
@@ -32,3 +27,4 @@ const firedFork = firePottery(fork, 1200)
 console.log(firedFork)
 const firedVase = firePottery(vase, 3000)
 console.log(firedVase)
+
