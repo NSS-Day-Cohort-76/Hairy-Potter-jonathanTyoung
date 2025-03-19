@@ -21,5 +21,13 @@ console.log(vase);
 
 // Fire each piece of the pottery
 
-const firedBowl = firePottery(bowl, 1000)
+const firedBowl = firePottery(bowl, 2199)
 console.log(firedBowl)
+const firedCup = firePottery(cup, 2300)
+console.log(firedCup)
+const firedHouse = firePottery(house, 2500)
+console.log(firedHouse)
+const firedFork = firePottery(fork, 1200)
+console.log(firedFork)
+const firedVase = firePottery(vase, 3000)
+console.log(firedVase)
