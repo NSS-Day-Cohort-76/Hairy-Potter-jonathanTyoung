@@ -28,3 +28,16 @@ console.log(firedFork)
 const firedVase = firePottery(vase, 3000)
 console.log(firedVase)
 
+
+const priceBowl = toSellOrNotToSell(bowl)
+console.log(priceBowl)
+const priceCup = toSellOrNotToSell(cup)
+console.log(priceCup)
+const priceHouse = toSellOrNotToSell(house)
+console.log(priceHouse)
+const priceFork = toSellOrNotToSell(fork)
+console.log(priceFork)
+const priceVase = toSellOrNotToSell(vase)
+console.log(priceVase)
+
+
