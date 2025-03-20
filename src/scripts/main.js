@@ -1,5 +1,5 @@
 import { firePottery } from "./Kiln.js"
-import { toSellOrNotToSell } from "./PotteryCatalog.js"
+import { usePottery } from "./PotteryCatalog.js"
 import { PotteryList } from "./PotteryList.js";
 import { makePottery } from "./PotteryWheel.js";
 
@@ -7,8 +7,8 @@ import { makePottery } from "./PotteryWheel.js";
 // make the pottery 
 const bowl = makePottery ("BOWL", 2, 3);
 console.log(bowl);
-const cup = makePottery ("MUG", 4, 5);
-console.log(cup);
+const mug = makePottery ("MUG", 4, 5);
+console.log(mug);
 const house = makePottery ("HOUSE", 2, 5);
 console.log(house);
 const fork= makePottery ("FORK", .5, 6);
@@ -19,8 +19,8 @@ console.log(vase);
 // fire the pottery 
 const firedBowl = firePottery(bowl, 2199)
 console.log(firedBowl)
-const firedCup = firePottery(cup, 1000)
-console.log(firedCup)
+const firedMug = firePottery(mug, 1000)
+console.log(firedMug)
 const firedHouse = firePottery(house, 2500)
 console.log(firedHouse)
 const firedFork = firePottery(fork, 3000)
@@ -29,15 +29,15 @@ const firedVase = firePottery(vase, 1000)
 console.log(firedVase)
 
 //price the pottery
-const priceBowl = toSellOrNotToSell(bowl)
+const priceBowl = usePottery(bowl)
 console.log(priceBowl)
-const priceCup = toSellOrNotToSell(cup)
-console.log(priceCup)
-const priceHouse = toSellOrNotToSell(house)
+const priceMug = usePottery(mug)
+console.log(priceMug)
+const priceHouse = usePottery(house)
 console.log(priceHouse)
-const priceFork = toSellOrNotToSell(fork)
+const priceFork = usePottery(fork)
 console.log(priceFork)
-const priceVase = toSellOrNotToSell(vase)
+const priceVase = usePottery(vase)
 console.log(priceVase)
 
 
